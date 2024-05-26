@@ -5,7 +5,7 @@ This is a companion repo to host a local redis instance for the [Irish transport
 ## How to use
 
 - `docker build --tag 'image_name' .`
-- `docker run --detach 'image_name'`
+- `docker run --detach --expose 6379 -p 6379:6379 'image_name'`
 
 ## How to deploy
 
