@@ -18,3 +18,5 @@ To connect from another app on the same region. In the connecting app repository
 
 - flyctl cli `fly secrets set REDIS_PASSWORD=<your password>`
 - flyctl cli `fly secrets set REDIS_HOST=<your fly app name>.internal`
+
+If the docker container fails to find `start-redis-server.sh` check that the file line endings are set to LF and not CRLF. 
